@@ -18,6 +18,20 @@ html {
 	text-align: center;
 }
 
+.prof-box-1 {
+	width: 400px;
+	height: 500px;
+	background: rgba(131,216,231,0.82);
+	padding-top: 10px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 70px;
+	color: white;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
 .prof-pic{
 	border-radius: 50%;
 	height: 200px;
