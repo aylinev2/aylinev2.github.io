@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -49,7 +50,6 @@ ul#menu li a:hover {
   <img class="mySlides" src="images/fb2.png" style="width:300px">
   <img class="mySlides" src="images/fb3.png" style="width:300px">
   <img class="mySlides" src="images/fb4.png" style="width:300px">
-
   <button onclick="plusDivs(-1)">&#10094;</button>
   <button onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -75,8 +75,75 @@ function showDivs(n) {
 </script>
 
 <p>
- <br>For my Software Design Studio Course (CS 126) final, I decided to re-create the popular Flappy Bird Game in C++. For this project, I used the OfxGui library and other significant tools in OpenFrameworks.
+ For my Software Design Studio Course (CS 126) final, I decided to re-create the popular Flappy Bird Game in C++. For this project, I used the OfxGui library and other significant tools in OpenFrameworks.
 </p>
+
+<br>
+
+<h2> Google CodeU Chat App</h2>
+<div class="fb-pics" align="center">
+	<img class="mySlides1" src="images/code1.png" style="width:300px">
+  <img class="mySlides1" src="images/code2.png" style="width:300px">
+  <img class="mySlides1" src="images/code3.png" style="width:300px">
+  <img class="mySlides1" src="images/code4.png" style="width:300px">
+	<img class="mySlides1" src="images/code5.png" style="width:300px">
+	<img class="mySlides1" src="images/code6.png" style="width:300px">
+	<img class="mySlides1" src="images/code7.png" style="width:300px">
+	<img class="mySlides1" src="images/code8.png" style="width:300px">
+	<img class="mySlides1" src="images/code9.png" style="width:300px">
+	<img class="mySlides1" src="images/code10.png" style="width:300px">
+  <button onclick="plusDivs(-1)">&#10094;</button>
+  <button onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<p>
+	Over the summer, I participated in a program for aspiring software engineers called Google CodeU.
+	Over the course of 12 weeks, I was able to collaborate with a team of peers to design and implement
+	a web application using Java, JavaScript, HTML, and CSS. When working on this project my team also
+	used various Google Cloud Platform APIs, including App Engine and Datastore. Our chat app allows users
+	to connect through conversations that are started at different locations on a google map. We wanted the
+	map to be the focal point of our app so we turned it into a way for a user to join or start a conversation.
+	Our chat app also has some other features that include:
+</p>
+<ul>
+	<li>
+		 <strong>Activity Feed:</strong>
+		 A feed that shows all of the application's activity such as when users start conversations, write messages,
+		 or join the application.
+	</li>
+	<li>
+		<strong>Profile Pages:</strong>
+		 Pages that display a user's about me, profile picture, and a mini feed that includes all of the messages a
+		 user has sent. When logged in, users have the option to edit their about me and picture right from their profile page.
+	</li>
+	<li>
+		<strong>Text Styling:</strong>
+		 The ability to style text by using certain BBCode tags ([b]wow![/b] -> <b>wow!</b>
+		 ) or parse text to emojis (:cat: -> 🐱). Our website also has a text styling guide
+		  available for those who aren't familiar with BBCode tags and would like to learn
+			how to use them on our site.
+	</li>
+</ul>
 
 </div>
 
