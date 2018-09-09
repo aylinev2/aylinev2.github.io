@@ -1,5 +1,5 @@
-html { 
-  background: url(../images/backpic.jpg) no-repeat center center fixed; 
+html {
+  background: url(../images/backpic.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,7 @@ html {
 
 .prof-box-2 {
 	width: 400px;
-	height: 675px;
+	height: 635px;
 	background: rgba(131,216,231,0.82);
 	padding-top: 40px;
 	padding-right: 40px;

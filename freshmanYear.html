@@ -1,5 +1,7 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -34,7 +36,8 @@ ul#menu li a:hover {
 	<li><a href="index.html">Home</a></li>
 	<li><a href="aboutMe.html">Contact Info</a></li>
 	<li><a href="freshmanYear.html">Freshman Year Projects</a></li>
-	
+	<li><a href="sophomoreYear.html">Sophomore Year Projects</a></li>
+
 </ul>
 <div class="prof-box-1">
 
@@ -43,16 +46,40 @@ ul#menu li a:hover {
 
 <div class="line-break"></div>
 
-<p><br>
-</p> 
+<h2> Flappy Bird </h2>
+<div class="w3-content w3-display-container">
+	<img class="mySlides" src="images/fb1.png" style="width:200px">
+  <img class="mySlides" src="images/fb2.png" style="width:200px">
+  <img class="mySlides" src="images/fb3.png" style="width:200px">
+  <img class="mySlides" src="images/fb4.png" style="width:200px">
 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
 
-<img src="images/loading3.gif" class="prof-pic">
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
- <p>
-	<br>Projects are still currently being completed!!!
- </p>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<p>
+ <br>For my Software Design Studio Course (CS 126) final, I decided to re-create the popular Flappy Bird Game in C++. For this project, I used the OfxGui library and other significant tools in OpenFrameworks.
+</p>
 
 </div>
 
