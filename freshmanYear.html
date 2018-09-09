@@ -50,28 +50,22 @@ ul#menu li a:hover {
   <img class="mySlides" src="images/fb2.png" style="width:300px">
   <img class="mySlides" src="images/fb3.png" style="width:300px">
   <img class="mySlides" src="images/fb4.png" style="width:300px">
-
-  <button onclick="plusDivs(-1)">&#10094; <i class="fas fa-angle-left"></i></button>
-  <button onclick="plusDivs(1)">&#10095; <i class="fas fa-angle-right"></i></button>
 </div>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var myIndex = 0;
+carousel();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 </script>
 
