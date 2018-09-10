@@ -32,7 +32,7 @@ h2#link-h a {
 }
 
 h2#link-h a:hover {
-	background-color: #fac8fd;
+	color: #fac8fd;
 }
 </style>
 
@@ -52,42 +52,6 @@ h2#link-h a:hover {
  <h5>Here you can find all of the projects that I've been working on during my freshman year!</h5>
 
 <div class="line-break"></div>
-
-<h2> Flappy Bird </h2>
-<div align="center">
-	<img class="mySlides" src="images/fb1.png" style="width:500px">
-  <img class="mySlides" src="images/fb2.png" style="width:500px">
-  <img class="mySlides" src="images/fb3.png" style="width:500px">
-  <img class="mySlides" src="images/fb4.png" style="width:500px">
-  <button onclick="plusDivs(-1)">&#10094;</button>
-  <button onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-
-<p>
- For my Software Design Studio Course (CS 126) final, I decided to re-create the popular Flappy Bird Game in C++. For this project, I used the OfxGui library and other significant tools in OpenFrameworks.
-</p>
-
-<br>
 
 <h2 id="link-h"><a href="https://github.com/aylinev2/CodeU-Summer-2018">Google CodeU Chat App</a></h2>
 <div align="center">
@@ -151,6 +115,43 @@ function showDivs1(n) {
 		  available for those who aren't familiar with BBCode tags and would like to learn
 			how to use them on our site.
 	</li>
+
+<br>
+
+<h2 id="link-h"><a href="https://github.com/aylinev2/CS126-final-project">Flappy Bird</a></h2>
+<div align="center">
+	<img class="mySlides" src="images/fb1.png" style="width:500px">
+  <img class="mySlides" src="images/fb2.png" style="width:500px">
+  <img class="mySlides" src="images/fb3.png" style="width:500px">
+  <img class="mySlides" src="images/fb4.png" style="width:500px">
+  <button onclick="plusDivs(-1)">&#10094;</button>
+  <button onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<p>
+ For my Software Design Studio Course (CS 126) final, I decided to re-create the popular Flappy Bird Game in C++. For this project, I used the OfxGui library and other significant tools in OpenFrameworks.
+</p>
+
 <br>
 
 <h2> Other Projects</h2>
